@@ -3,6 +3,20 @@ import { BrowserRouter,Route, Link,Switch } from "react-router-dom";
 import Step2 from './Step2' 
 import Step3 from './Step3'
 
+/* CSS */
+
+const btnStyle1 = {
+  color: "white",
+  background: "#00BFFF",
+  padding: ".375rem .75rem",
+  border: "1px solid teal",
+  borderRadius: ".25rem",
+  fontSize: "1rem",
+  lineHeight: 1.5,
+};
+
+
+/* Component */
 
 class App extends Component {
   render() {
@@ -31,13 +45,14 @@ function Home({match}){
 }
 /*STEP1*/
 function Step1({match}) {
-  return <article>
+  return <div>
     <h2>MBTI를 입력하자!</h2>
     <p>당신의 성별은 무엇인가요?</p>
-    <button onclick="activateLasers()">
+    <button onclick="activateLasers()" style={btnStyle1}>
     남자
     </button>
-    <button onclick="activateLasers()">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="activateLasers()" style={btnStyle1}>
     여자
     </button>
     <p>당신의 MBTI를 작성해주세요!</p>
@@ -52,7 +67,7 @@ function Step1({match}) {
 <a href="https://www.16personalities.com/ko">지금 바로 테스트 하러가기!</a>
 
 <p><button type="submit">Submit</button></p>
-</article> 
+</div> 
 }
 
 
