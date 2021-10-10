@@ -1,0 +1,9 @@
+function Step2({match}) {
+  return <article>
+    <h2>당신의 유형별 평균관상은?</h2>
+    <p>당신은 XXXX 입니다!</p>
+    <img src="C:/Users/kimhs/Desktop/REACT/src/w.png" width="128" height="128"/>
+    <p>(유형별 평균얼굴)</p>
+    
+</article> 
+}
